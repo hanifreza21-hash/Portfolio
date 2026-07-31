@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.H. Reza | Researcher | Photovoltaics | Power Electronics & AI-Driven Energy Systems</title>
+
+    <!-- AOS (Animate On Scroll) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #2c3e50;
+            --hero-bg: #ffffff;
+            --nav-bg: #1a3a5c;
+            --nav-text: #ffffff;
+            --card-bg: #ffffff;
+            --card-shadow: rgba(0,0,0,0.06);
+            --section-heading: #1a3a5c;
+            --accent: #2c5282;
+            --accent-light: #ffd700;
+            --muted: #6b7280;
+            --footer-bg: #0f2438;
+            --border-color: #e5e7eb;
+            --section-alt-bg: #f8fafc;
+        }
+
+        [data-theme="dark"] {
+            --bg-color: #121821;
+            --text-color: #e0e6ed;
+            --hero-bg: #1a2332;
+            --nav-bg: #0a1929;
+            --nav-text: #ffffff;
+            --card-bg: #1e2a3a;
+            --card-shadow: rgba(0,0,0,0.3);
+            --section-heading: #79b8ff;
+            --accent: #79b8ff;
+            --accent-light: #ffd700;
+            --muted: #aab4c0;
+            --footer-bg: #050d18;
+            --border-color: #2d3a4d;
+            --section-alt-bg: #161e2a;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.7;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--nav-bg);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.3rem;
+        }
+
+        nav a {
+            color: var(--nav-text);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover { color: var(--accent-light); }
+
+        .theme-toggle {
+            background: rgba(255,255,255,0.1);
+            border: 2px solid rgba(255,255,255,0.3);
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        .theme-toggle:hover { background: rgba(255,255,255,0.2); transform: rotate(20deg); }
+
+        .cv-download-btn {
+            background: var(--accent-light);
+            color: #1a3a5c !important;
+            padding: 0.6rem 1.2rem;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .cv-download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255,215,0,0.3);
+        }
+
+        /* ========================= */
+        /* HERO SECTION (NEW DESIGN) */
+        /* ========================= */
+        .hero {
+            background: var(--hero-bg);
+            padding: 4rem 2rem;
+            transition: background 0.3s ease;
+        }
+
+        .hero-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 320px 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .hero-left {
+            text-align: center;
+            position: sticky;
+            top: 100px;
+        }
+
+        .profile-photo {
+            width: 240px;
+            height: 240px;
+            border-radius: 50%;
+            object-fit: contain;
+            background-color: #ffffff;
+            border: 4px solid var(--border-color);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            margin: 0 auto 1.5rem auto;
+            display: block;
+        }
+
+        .profile-photo:hover { transform: scale(1.03); }
+
+        .hero-name {
+            font-size: 1.9rem;
+            font-weight: 600;
+            color: var(--text-color);
+            margin-bottom: 1.5rem;
+            font-family: 'Georgia', serif;
+        }
+
+        .hero-tagline {
+            font-size: 0.95rem;
+            color: var(--text-color);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            font-style: italic;
+            font-weight: 500;
+        }
+
+        .hero-tagline strong {
+            font-weight: 700;
+            font-style: italic;
+        }
+
+        .hero-socials {
+            display: flex;
+            justify-content: center;
+            gap: 1.2rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        .hero-socials a {
+            color: var(--accent);
+            font-size: 1.6rem;
+            text-decoration: none;
+            transition: transform 0.3s ease, color 0.3s;
+        }
+
+        .hero-socials a:hover {
+            transform: translateY(-4px);
+            color: var(--section-heading);
+        }
+
+        .hero-right h2 {
+            font-size: 2.5rem;
+            color: var(--section-heading);
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+            font-family: 'Georgia', serif;
+        }
+
+        /* Typography Enhancements */
+        .hero-right p {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            font-size: 1rem;
+            line-height: 1.85;
+            letter-spacing: 0.3px;
+            color: var(--text-color);
+            margin-bottom: 1.2rem;
+            text-align: justify;
+        }
+
+        .hero-right strong {
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            color: var(--section-heading);
+        }
+
+        .hero-right em {
+            font-style: italic;
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        .hero-right a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .hero-right a:hover { text-decoration: underline; }
+
+        .cta-button {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.8rem 1.8rem;
+            background: var(--accent);
+            color: #fff !important;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: var(--section-heading);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            text-decoration: none !important;
+        }
+
+        .scores-inline {
+            display: flex;
+            gap: 2rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+            padding: 1rem 1.5rem;
+            background: var(--section-alt-bg);
+            border-radius: 8px;
+            border-left: 4px solid var(--accent);
+        }
+
+        .scores-inline div { font-size: 0.95rem; }
+        .scores-inline strong { color: var(--accent); }
+
+        /* ========================= */
+        /* OTHER SECTIONS            */
+        /* ========================= */
+        section {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            color: var(--section-heading);
+            border-bottom: 3px solid var(--section-heading);
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+            font-family: 'Georgia', serif;
+        }
+
+        section h3 {
+            color: var(--accent);
+            margin: 1.5rem 0 0.5rem 0;
+        }
+
+        .section-alt {
+            background: var(--section-alt-bg);
+            max-width: 100%;
+        }
+
+        .section-alt > * {
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Research */
+        .research-card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--accent);
+            box-shadow: 0 2px 8px var(--card-shadow);
+            border-radius: 4px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .research-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px var(--card-shadow);
+        }
+
+        .research-card .keywords {
+            margin-top: 0.8rem;
+            font-size: 0.9rem;
+            color: var(--muted);
+            font-style: italic;
+        }
+
+        /* Publications */
+        .publication {
+            background: var(--card-bg);
+            padding: 1.2rem 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+            box-shadow: 0 1px 4px var(--card-shadow);
+            transition: transform 0.3s ease;
+            border-left: 3px solid var(--accent);
+        }
+
+        .publication:hover { transform: translateX(5px); }
+
+        .publication .pub-type {
+            display: inline-block;
+            color: #fff;
+            padding: 0.2rem 0.8rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+        }
+
+        .publication .pub-type.journal { background: #c0392b; }
+        .publication .pub-type.conference { background: #2c5282; }
+        .publication .pub-type.progress { background: #e67e22; }
+
+        .publication .authors { font-weight: bold; }
+        .publication .venue { font-style: italic; color: var(--muted); }
+        .publication .year { color: var(--accent); font-weight: bold; }
+
+        .publication a {
+            color: var(--accent);
+            text-decoration: none;
+            margin-right: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .publication a:hover { text-decoration: underline; }
+
+        /* Scholar Widget */
+        .scholar-widget {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px var(--card-shadow);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .scholar-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .stat-box {
+            padding: 1.2rem;
+            background: linear-gradient(135deg, var(--accent) 0%, var(--section-heading) 100%);
+            color: #fff;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .stat-box:hover { transform: scale(1.05); }
+
+        .stat-box .number {
+            font-size: 2.2rem;
+            font-weight: bold;
+            display: block;
+        }
+
+        .stat-box .label { font-size: 0.9rem; opacity: 0.95; }
+
+        .scholar-link {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.6rem 1.5rem;
+            background: var(--accent);
+            color: #fff !important;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 0.95rem;
+            transition: all 0.3s;
+        }
+
+        .scholar-link:hover {
+            background: var(--section-heading);
+            transform: translateY(-2px);
+        }
+
+        /* Timeline */
+        .timeline-item {
+            background: var(--card-bg);
+            padding: 1.2rem 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+            box-shadow: 0 1px 4px var(--card-shadow);
+            transition: transform 0.3s ease;
+        }
+
+        .timeline-item:hover { transform: translateX(5px); }
+
+        .timeline-item .date {
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        .timeline-item h3 { margin: 0.3rem 0; }
+        .timeline-item .institution { color: var(--muted); font-style: italic; }
+
+        /* Projects Grid - Single Row */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px var(--card-shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px var(--card-shadow);
+        }
+
+        .project-icon {
+            width: 100%;
+            height: 120px;
+            background: linear-gradient(135deg, var(--accent) 0%, var(--section-heading) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 2.5rem;
+        }
+
+        .project-content { padding: 1.2rem 1.5rem; flex: 1; }
+        .project-content h3 { margin: 0 0 0.5rem 0; font-size: 1rem; }
+        .project-content p { color: var(--muted); font-size: 0.9rem; }
+
+        /* Lists */
+        ul.styled-list { list-style: none; padding: 0; }
+
+        ul.styled-list li {
+            background: var(--card-bg);
+            padding: 0.8rem 1.2rem;
+            margin-bottom: 0.6rem;
+            border-left: 3px solid var(--accent);
+            border-radius: 3px;
+            box-shadow: 0 1px 3px var(--card-shadow);
+            transition: transform 0.3s ease;
+        }
+
+        ul.styled-list li:hover { transform: translateX(8px); }
+
+        /* Skills Grid - Updated for two rows */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-category {
+            background: var(--card-bg);
+            padding: 1.2rem;
+            border-radius: 4px;
+            box-shadow: 0 1px 4px var(--card-shadow);
+            transition: transform 0.3s ease;
+        }
+
+        .skill-category:hover { transform: translateY(-5px); }
+
+        .skill-category h4 {
+            color: var(--section-heading);
+            margin-bottom: 0.5rem;
+        }
+
+        /* References */
+        .references-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .reference-card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px var(--card-shadow);
+            border-top: 4px solid var(--accent);
+            transition: transform 0.3s ease;
+        }
+
+        .reference-card:hover { transform: translateY(-5px); }
+        .reference-card h3 { margin-top: 0; color: var(--accent); }
+        .reference-card p { margin: 0.3rem 0; font-size: 0.95rem; }
+
+        /* Contact */
+        #contact {
+            background: var(--nav-bg);
+            color: #fff;
+            text-align: center;
+            max-width: 100%;
+            margin-top: 3rem;
+        }
+
+        #contact h2 {
+            color: #fff;
+            border-color: var(--accent-light);
+        }
+
+        #contact a { color: var(--accent-light); text-decoration: none; }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: var(--footer-bg);
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .projects-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 900px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                text-align: center;
+            }
+            .hero-left { position: static; }
+            .hero-right h2 { font-size: 2rem; }
+            .hero-right p { text-align: justify; }
+            nav ul { gap: 0.8rem; }
+            nav .nav-container { flex-direction: column; gap: 1rem; padding: 0 1rem; }
+            .profile-photo { width: 180px; height: 180px; background-color: #ffffff; }
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+            .skills-grid {
+                grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <ul>
+                <li><a href="#hero">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#extracurricular">Extra-Curricular</a></li>
+                <li><a href="#references">References</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div style="display: flex; gap: 1rem; align-items: center;">
+                <a href="CV_M_H_Reza.pdf" download class="cv-download-btn">
+                    <i class="fas fa-download"></i> CV (PDF)
+                </a>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================== -->
+    <!-- HERO / FIRST PAGE  -->
+    <!-- ================== -->
+    <section class="hero" id="hero">
+        <div class="hero-container">
+
+            <!-- LEFT: Profile Photo + Name + Socials -->
+            <div class="hero-left" data-aos="fade-right" data-aos-duration="1000">
+                <img src="photo.jpeg" alt="M.H. Reza" class="profile-photo"
+                     onerror="this.src='https://via.placeholder.com/240/1a3a5c/ffffff?text=MHR'">
+
+                <h1 class="hero-name">M.H. Reza</h1>
+
+                <p class="hero-tagline">
+                    <strong>Researcher</strong> | <strong>Photovoltaics</strong> | <strong>Power Electronics & AI-Driven Energy Systems</strong> | <strong>Seeking MS/PhD in Smart Grids & Renewable Energy</strong>
+                </p>
+
+                <div class="hero-socials">
+                    <a href="mailto:hanif.rezapusteee@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://scholar.google.com/citations?user=-3UVhfMAAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                    <a href="https://orcid.org/0009-0002-0333-7090" target="_blank" title="ORCID"><i class="fab fa-orcid"></i></a>
+                    <a href="https://www.researchgate.net/profile/Md-Reza-22" target="_blank" title="ResearchGate"><i class="fab fa-researchgate"></i></a>
+                    <a href="https://github.com/yourusername" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/yourprofile" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <!-- RIGHT: About Me -->
+            <div class="hero-right" data-aos="fade-left" data-aos-duration="1000">
+                <h2>About me</h2>
+
+                <p style="font-size: 1rem; line-height: 1.8;">
+                    <span style="font-weight: 700; font-size: 1.05rem;">HI!</span> I am an 
+                    <span style="font-weight: 700;">Electrical and Electronic Engineering Graduate</span> 
+                    and researcher dedicated to bridging the gap between traditional power systems and advanced computational intelligence. 
+                </p>
+
+                <p style="font-size: 1rem; line-height: 1.8;">
+                    My expertise spans <span style="font-weight: 700;">Photovoltaics, smart grid resilience, renewable energy integration, and intelligent power electronics.</span> 
+                    With a proven track record of applying machine learning to complex materials sensing and power optimization challenges, 
+                    I thrive on <span style="font-weight: 700;">interdisciplinary innovation</span> whether it is simulating advanced energy systems or deploying hardware solutions to solve real-world problems.
+                </p>
+
+                <p style="font-size: 1rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                    <strong>Recent highlight:</strong> Published in <em>Journal of Hazardous Materials Advances</em> (IF 7.7) on <strong>machine learning-driven terahertz PCF sensors for explosive detection</strong>.
+                </p>
+
+                <div class="scores-inline">
+                    <div><strong>GRE:</strong> 312 (Q-164, V-148, AWA-3.0)</div>
+                    <div><strong>IELTS:</strong> 6.5 (L-7.0, R-6.5, W-6.5, S-6.0)</div>
+                </div>
+
+                <a href="#contact" class="cta-button"><i class="fas fa-paper-plane"></i> Get in Touch</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Research Interests -->
+    <section id="research" class="section-alt">
+        <div style="padding: 4rem 2rem;">
+            <h2 data-aos="fade-right">Research Interests</h2>
+
+            <div class="research-card" data-aos="fade-up">
+                <h3><i class="fas fa-solar-panel"></i> Photovoltaics & Renewable Energy Integration</h3>
+                <p>Modeling and simulation of solar PV systems, MPPT algorithm development, and integration of renewable sources into modern power grids for sustainable energy solutions.</p>
+                <p class="keywords">Keywords: Solar PV, MPPT, P&O Technique, Renewable Energy, Grid Integration</p>
+            </div>
+
+            <div class="research-card" data-aos="fade-up" data-aos-delay="100">
+                <h3><i class="fas fa-bolt"></i> Smart Grid & Distribution Network Resilience</h3>
+                <p>Research on smart grid systems, V2G (Vehicle-to-Grid) technology integration, and distribution network reliability for next-generation power infrastructure.</p>
+                <p class="keywords">Keywords: Smart Grid, V2G, EV Integration, Distribution Networks, Power Systems</p>
+            </div>
+
+            <div class="research-card" data-aos="fade-up" data-aos-delay="200">
+                <h3><i class="fas fa-microchip"></i> Power Electronics & Multilevel Inverters</h3>
+                <p>Harmonic distortion reduction in transformerless inverters, design of multilevel inverter topologies, and LCL filter optimization for improved power quality.</p>
+                <p class="keywords">Keywords: Multilevel Inverters, Harmonic Reduction, LCL Filter, Power Quality</p>
+            </div>
+
+            <div class="research-card" data-aos="fade-up" data-aos-delay="300">
+                <h3><i class="fas fa-brain"></i> Machine Learning & AI Applications</h3>
+                <p>Applying machine learning to engineering challenges, including terahertz PCF sensing for explosive detection and intelligent control systems for power electronics.</p>
+                <p class="keywords">Keywords: Machine Learning, PCF Sensing, Terahertz, AI, Signal Processing</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications">
+        <h2 data-aos="fade-right">Publications</h2>
+
+        <div class="scholar-widget" data-aos="zoom-in">
+            <h3 style="margin-top:0;"><i class="fas fa-graduation-cap"></i> Publication Metrics</h3>
+            <p style="color: var(--muted);">Total: 1 Journal Article + 4 Conference Papers + 3 In-Progress</p>
+            <div class="scholar-stats">
+                <div class="stat-box">
+                    <span class="number">1</span>
+                    <span class="label">Journal Articles</span>
+                </div>
+                <div class="stat-box">
+                    <span class="number">4</span>
+                    <span class="label">Conference Papers</span>
+                </div>
+                <div class="stat-box">
+                    <span class="number">3</span>
+                    <span class="label">In Progress</span>
+                </div>
+                <div class="stat-box">
+                    <span class="number">39</span>
+                    <span class="label">Citations</span>
+                </div>
+            </div>
+            <a href="https://scholar.google.com/citations?user=-3UVhfMAAAAJ&hl=en" target="_blank" class="scholar-link">
+                <i class="fas fa-external-link-alt"></i> View Full Profile on Google Scholar
+            </a>
+        </div>
+
+        <h3 data-aos="fade-up">📄 Journal Article</h3>
+
+        <div class="publication" data-aos="fade-up">
+            <span class="pub-type journal">Journal</span>
+            <p>Ferdous, A. H. M. I., Islam, M. S., Mamun, A. al, <span class="authors">Reza, M. H.</span>, Hossen, M. J., & Anower, M. S. (<span class="year">2025</span>). <strong>Terahertz PCF sensor for explosive detection: A machine learning approach to nitroglycerine and royal demolition analysis.</strong> <span class="venue">Journal of Hazardous Materials Advances</span>, 20.
+            <br>
+            <a href="https://doi.org/10.1016/j.hazadv.2025.100886" target="_blank">[DOI]</a>
+            <span style="color: var(--accent); font-weight: bold;">Impact Factor: 7.7</span>
+            </p>
+        </div>
+
+        <h3 data-aos="fade-up">🎤 Conference Papers</h3>
+
+        <div class="publication" data-aos="fade-up">
+            <span class="pub-type conference">Conference</span>
+            <p><span class="authors">Reza, Md. Hanif</span>, and Md Asaduzzaman Shobug. (<span class="year">2020</span>). <strong>Efficiency Evaluation of P&O MPPT Technique Used for Maximum Power Extraction from Solar Photovoltaic System.</strong> <span class="venue">2020 IEEE Region 10 Symposium (TENSYMP)</span>, 1808–11.
+            <br>
+            <a href="https://doi.org/10.1109/TENSYMP50017.2020.9230810" target="_blank">[DOI]</a>
+            </p>
+        </div>
+
+        <div class="publication" data-aos="fade-up" data-aos-delay="50">
+            <span class="pub-type conference">Conference</span>
+            <p>Ahsan, E. E., Shobug, M. A., Tanim, M. M. H., and <span class="authors">Reza, M. H.</span> (<span class="year">2020</span>). <strong>Harmonic Distortion Reduction of Transformerless Inverter's Output Voltage Using 5-Level Single-Phase Inverter and LCL Filter.</strong> <span class="venue">2020 2nd International Conference on Advanced Information and Communication Technology (ICAICT)</span>, 251–56.
+            <br>
+            <a href="https://doi.org/10.1109/ICAICT51780.2020.9333510" target="_blank">[DOI]</a>
+            </p>
+        </div>
+
+        <div class="publication" data-aos="fade-up" data-aos-delay="100">
+            <span class="pub-type conference">Conference</span>
+            <p>Ali, M. S., Khallil, M. E., <span class="authors">Reza, M. H.</span>, Islam, M. A., and Rubel, M. (<span class="year">2024</span>). <strong>Analysis and Dynamic Modelling of a Solar Water Pumping System.</strong> <span class="venue">7th Bangladesh International Conference on Industrial Engineering and Operations Management (IEOM)</span>, December 2024.
+            <br>
+            <a href="https://doi.org/10.46254/BA07.20240107" target="_blank">[DOI]</a>
+            </p>
+        </div>
+
+        <div class="publication" data-aos="fade-up" data-aos-delay="150">
+            <span class="pub-type conference">Conference</span>
+            <p>Islam, A., Khallil, M., and <span class="authors">Reza, M.</span> (<span class="year">2025</span>). <strong>A Review on Vehicle-to-Grid (V2G) Technologies Towards Smart Grid for Distribution Networks.</strong> <span class="venue">8th IEOM Conference</span>, December 2025.
+            <br>
+            <a href="https://doi.org/10.46254/BA08.20250327" target="_blank">[DOI]</a>
+            </p>
+        </div>
+
+        <h3 data-aos="fade-up">🚧 In-Progress Articles</h3>
+
+        <div class="publication" data-aos="fade-up">
+            <span class="pub-type progress">In Progress</span>
+            <p><strong>Short-Term Electrical Load Forecasting for a Rural Off-Grid Microgrid in Sunamganj, Bangladesh: A Comparative Machine-Learning Study under Leakage-Free Validation.</strong> <em>(Under preparation for IEEE journal submission)</em>
+            <br>
+            <small>ML methods: LSTM, Random Forest, SVR, gradient boosting. Focus: preventing data leakage in time-series forecasting; hybrid microgrid optimization.</small>
+            </p>
+        </div>
+
+        <div class="publication" data-aos="fade-up" data-aos-delay="50">
+            <span class="pub-type progress">In Progress</span>
+            <p><strong>Design and Implementation of a Low-Cost Microcontroller-Based Electronic Thermostat for Water Dispenser with Compressor Protection.</strong></p>
+        </div>
+
+        <div class="publication" data-aos="fade-up" data-aos-delay="50">
+            <span class="pub-type progress">In Progress</span>
+            <p><strong>A Hybrid Acoustic and Pulsed-Thermal Sensing System for ML-Driven 3D Environmental Mapping.</strong> <em>(In preparation)</em></p>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section-alt">
+        <div style="padding: 4rem 2rem;">
+            <h2 data-aos="fade-right">Notable Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-icon"><i class="fas fa-cube"></i></div>
+                    <div class="project-content">
+                        <h3>Acoustic & Pulsed-Thermal Sensing</h3>
+                        <p>ML-driven 3D environmental mapping system combining acoustic and thermal sensors for advanced spatial analytics.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-icon"><i class="fas fa-temperature-high"></i></div>
+                    <div class="project-content">
+                        <h3>Electronic Thermostat</h3>
+                        <p>Low-cost microcontroller-based thermostat with compressor protection. Validated by Pel LAB, Pakistan.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-icon"><i class="fas fa-tv"></i></div>
+                    <div class="project-content">
+                        <h3>Home Appliance Control</h3>
+                        <p>Arduino-based system enabling wireless load control of home appliances using IR signals from TV remote.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-icon"><i class="fas fa-building"></i></div>
+                    <div class="project-content">
+                        <h3>Stadium Electrical Design</h3>
+                        <p>Comprehensive electrical wiring and load distribution design for a large indoor stadium facility.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section-alt">
+        <div style="padding: 4rem 2rem;">
+            <h2 data-aos="fade-right">Education</h2>
+            <div class="timeline-item" data-aos="fade-up">
+                <span class="date">March 2015 – September 2020</span>
+                <h3>Bachelor of Science in Electrical and Electronic Engineering</h3>
+                <p class="institution">Pabna University of Science and Technology, Bangladesh</p>
+                <p><strong>CGPA:</strong> 3.71/4.00 | <strong>Merit Position:</strong> 6th out of 42</p>
+                <p><strong>Final Year Result:</strong> 4-1 (4.00/4.00) & 4-2 (3.92/4.00)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+        <h2 data-aos="fade-right">Work Experience</h2>
+
+        <h3 data-aos="fade-up">💼 Professional Experience</h3>
+
+        <div class="timeline-item" data-aos="fade-up">
+            <span class="date">January 2022 – December 2024 | On-Site</span>
+            <h3>Customer Service Executive</h3>
+            <p class="institution">Messbook Software's Ltd.</p>
+            <p>Managed client communications and operational support for software service projects, coordinated with technical teams to ensure timely issue resolution and service delivery, developed strong problem-solving, communication, and customer relationship management skills.</p>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+            <span class="date">March 2023 – July 2025 | Remote</span>
+            <h3>AI Contributor</h3>
+            <p class="institution">Outlier, Scale AI Inc.</p>
+            <p>Contributed to AI model training and evaluation tasks, worked on analytical problem-solving and quality improvement processes, enhanced understanding of AI systems and emerging technologies.</p>
+        </div>
+
+        <h3 data-aos="fade-up">🔬 Research Experience</h3>
+
+        <div class="timeline-item" data-aos="fade-up">
+            <span class="date">August 2019 – September 2020</span>
+            <h3>Undergraduate Research Assistant</h3>
+            <p class="institution">EEE Lab, Pabna University of Science and Technology | Advisor: Md. Asaduzzaman Shobug</p>
+            <p>Modelled and simulated photovoltaic, wind turbine, and multi-level inverter systems in MATLAB/Simulink. Developed an MPPT algorithm for solar PV and evaluated the model for maximum efficiency.</p>
+        </div>
+    </section>
+
+    <!-- Skills - Updated -->
+    <section id="skills">
+        <h2 data-aos="fade-right">Technical Strengths</h2>
+        <div class="skills-grid">
+            <div class="skill-category" data-aos="zoom-in">
+                <h4><i class="fas fa-calculator"></i> Numerical Analysis</h4>
+                <p>MATLAB (Intermediate), Python-SciPy/NumPy (Intermediate)</p>
+            </div>
+            <div class="skill-category" data-aos="zoom-in" data-aos-delay="50">
+                <h4><i class="fas fa-code"></i> Programming</h4>
+                <p>Python, C, C++, Microprocessor Emulator, HTML</p>
+            </div>
+            <div class="skill-category" data-aos="zoom-in" data-aos-delay="100">
+                <h4><i class="fas fa-file-word"></i> Word Processing & Presentation</h4>
+                <p>Microsoft Office, Overleaf</p>
+            </div>
+            <div class="skill-category" data-aos="zoom-in" data-aos-delay="150">
+                <h4><i class="fas fa-chart-bar"></i> Statistical Software</h4>
+                <p>SPSS, Jamovi</p>
+            </div>
+            <div class="skill-category" data-aos="zoom-in" data-aos-delay="200">
+                <h4><i class="fas fa-microchip"></i> Simulation & Circuit Design</h4>
+                <p>COMSOL Multiphysics, Arduino, Proteus, PSpice, MATLAB Simulink</p>
+            </div>
+            <div class="skill-category" data-aos="zoom-in" data-aos-delay="250">
+                <h4><i class="fas fa-drafting-compass"></i> Engineering Design</h4>
+                <p>Microsoft Visio, Adobe Illustrator, Canva</p>
+            </div>
+            <div class="skill-category" data-aos="zoom-in" data-aos-delay="300">
+                <h4><i class="fas fa-book"></i> Citation and Bibliography</h4>
+                <p>EndNote, Zotero, Mendeley</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Extra-Curricular, Honors & Leadership -->
+    <section id="extracurricular" class="section-alt">
+        <div style="padding: 4rem 2rem;">
+            <h2 data-aos="fade-right">Extra-Curricular, Honors & Leadership</h2>
+            
+            <h3 data-aos="fade-up">🏆 Honors & Awards</h3>
+            <ul class="styled-list">
+                <li data-aos="fade-left">
+                    <strong>🏆 Departmental Merit Scholarship</strong>, Dept. of EEE, PUST <em>(Final Year 2020)</em><br>
+                    <small>Final Year Result 4-1 (4.00/4.00) & 4-2 (3.92/4.00) | Overall Position: 6th</small>
+                </li>
+            </ul>
+
+            <h3 data-aos="fade-up" style="margin-top:2rem;">🎯 Leadership Experience</h3>
+            <ul class="styled-list">
+                <li data-aos="fade-left"><strong>ASPIRE Leadership Program</strong> <span style="float:right; color: var(--accent);"><em>Apr 2026 – Jun 2026</em></span></li>
+                <li data-aos="fade-left" data-aos-delay="50"><strong>Student Member — IEEE</strong> <span style="float:right; color: var(--accent);"><em>Jan 2017 – Dec 2020</em></span></li>
+                <li data-aos="fade-left" data-aos-delay="100"><strong>Program Coordinator — IEEE PUST Student Branch</strong> <span style="float:right; color: var(--accent);"><em>Jan 2018 – Dec 2020</em></span></li>
+                <li data-aos="fade-left" data-aos-delay="150"><strong>Member — Bangladesh Student Council</strong> <span style="float:right; color: var(--accent);"><em>Jan 2017 – Dec 2018</em></span></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- References -->
+    <section id="references">
+        <h2 data-aos="fade-right">References</h2>
+        <div class="references-grid">
+            <div class="reference-card" data-aos="fade-up">
+                <h3><i class="fas fa-user-tie"></i> Md. Asaduzzaman Shobug</h3>
+                <p><strong>Assistant Professor</strong></p>
+                <p>Dept. of EEE</p>
+                <p>Pabna University of Science & Technology</p>
+                <p>Pabna-6600, Bangladesh</p>
+                <p><i class="fas fa-phone"></i> +8801724773530</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:sabs.ruet@gmail.com" style="color: var(--accent);">sabs.ruet@gmail.com</a></p>
+            </div>
+
+            <div class="reference-card" data-aos="fade-up" data-aos-delay="100">
+                <h3><i class="fas fa-user-tie"></i> Md. Feroz Ali</h3>
+                <p><strong>Assistant Professor</strong></p>
+                <p>Dept. of EEE</p>
+                <p>Pabna University of Science & Technology</p>
+                <p>Pabna-6600, Bangladesh</p>
+                <p><i class="fas fa-phone"></i> +8801724909432</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:feroz071021@gmail.com" style="color: var(--accent);">feroz071021@gmail.com</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2 data-aos="fade-up">Get in Touch</h2>
+        <p data-aos="fade-up" data-aos-delay="100">Open to MS/PhD opportunities, research collaborations, and academic discussions.</p>
+        <p style="margin-top: 1.5rem;" data-aos="fade-up" data-aos-delay="200">
+            <i class="fas fa-envelope"></i> <a href="mailto:hanif.rezapusteee@gmail.com">hanif.rezapusteee@gmail.com</a><br>
+            <i class="fas fa-phone"></i> +8801795454861<br>
+            <i class="fas fa-map-marker-alt"></i> Dhaka-1512, Bangladesh
+        </p>
+        <p style="margin-top: 1.5rem;" data-aos="fade-up" data-aos-delay="300">
+            <a href="https://scholar.google.com/citations?user=-3UVhfMAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a> |
+            <a href="https://orcid.org/0009-0002-0333-7090" target="_blank"><i class="fab fa-orcid"></i> ORCID</a> |
+            <a href="https://www.researchgate.net/profile/Md-Reza-22" target="_blank"><i class="fab fa-researchgate"></i> ResearchGate</a> |
+            <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i> GitHub</a> |
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 M.H. Reza. All rights reserved. | Built with HTML, CSS & AOS Animations</p>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Wait for AOS to load before initializing
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof AOS !== 'undefined') {
+                AOS.init({
+                    duration: 800,
+                    easing: 'ease-in-out',
+                    once: true,
+                    offset: 100
+                });
+            }
+        });
+
+            // Dark Mode Toggle
+            const themeToggle = document.getElementById('themeToggle');
+            const themeIcon = document.getElementById('themeIcon');
+            const htmlElement = document.documentElement;
+
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            htmlElement.setAttribute('data-theme', savedTheme);
+            updateIcon(savedTheme);
+
+            themeToggle.addEventListener('click', () => {
+                const currentTheme = htmlElement.getAttribute('data-theme');
+                const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+                htmlElement.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+                updateIcon(newTheme);
+            });
+
+            function updateIcon(theme) {
+                if (theme === 'dark') {
+                    themeIcon.classList.remove('fa-moon');
+                    themeIcon.classList.add('fa-sun');
+                } else {
+                    themeIcon.classList.remove('fa-sun');
+                    themeIcon.classList.add('fa-moon');
+                }
+            }
+
+            // Smooth scroll
+            document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                });
+            });
+      
+    </script>
+
+</body>
+</html>
